@@ -7,9 +7,7 @@ module.exports = {
       plugin: CracoAlias,
       options: {
         source: 'tsconfig',
-        baseUrl: '.',
         tsConfigPath: 'tsconfig.paths.json',
-        debug: false,
       },
     },
     {
@@ -20,24 +18,6 @@ module.exports = {
             javascriptEnabled: true,
           },
         },
-        // modifyLessRule: function () {
-        //   return {
-        //     test: /\.module\.less$/,
-        //     exclude: /node_modules/,
-        //     use: [
-        //       { loader: 'style-loader' },
-        //       {
-        //         loader: 'css-loader',
-        //         options: {
-        //           modules: {
-        //             localIdentName: '[local]_[hash:base64:6]',
-        //           },
-        //         },
-        //       },
-        //       { loader: 'less-loader' },
-        //     ],
-        //   };
-        // },
       },
     },
   ],
