@@ -1,0 +1,9 @@
+@import '@/styles';
+
+.primaryButton { .flex-center; .wh(100%,48); .max-w(300); .bgc(@gray[@3]); .c(@c-black); .semi-bold; .br(4); .pointer;
+  @{hover-press} { .bgc(@gray[@5]); }
+
+  &.green { .bgc(@green[@2]); .c(#fff); 
+    @{hover-press} { .bgc(@green[@1]); }
+  }
+}

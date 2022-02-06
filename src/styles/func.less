@@ -267,6 +267,6 @@
 .scroll() { overflow-y: scroll; }
 .scroll-auto() { overflow-y: auto; }
 
-@hover: ~'.no-touch &:hover:not(.hover-disable)';
-@hover-press: ~'.no-touch &:hover:not(.hover-disable), &:active';
+@hover: ~'&:hover:not(.hover-disable)';
+@hover-press: ~'&:hover:not(.hover-disable), &:active';
 @router-active: ~'&:not(.exact).router-link-active, &.exact.router-link-exact-active';
