@@ -1,0 +1,8 @@
+@import '@/styles';
+
+.modalDim { .wh(100%); .p(0,20); .flex-center; .fix; .lt(0,0); .bgc(rgba(0,0,0,0.4)); .tc; .z(@z[@modal])}
+.modalBox { .rel; .w(360); .min-h(400); .max-h(90vh); .p(40, 20); overflow-y: auto; .bgc(#fff); .br(4); .z(@z[@modal]+1);
+  :global {
+    .close { .abs; .rt(20,20); }
+  }
+}

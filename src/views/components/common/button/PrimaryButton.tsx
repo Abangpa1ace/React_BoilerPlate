@@ -5,20 +5,20 @@ type Props = {
   children?: string | React.ReactNode;
   theme?: ButtomTheme;
   disabled?: boolean;
-  handleClick?: () => void;
+  onClick?: () => void;
 };
 
 const PrimaryButton: React.FC<Props> = ({
   children,
   theme,
   disabled,
-  handleClick,
+  onClick,
 }) => {
   return (
     <button
-      className={(styles.primaryButton, theme)}
+      className={styles[theme || 'gray']}
       disabled={disabled}
-      onClick={handleClick}
+      onClick={onClick}
     >
       {children || '확인'}
     </button>
