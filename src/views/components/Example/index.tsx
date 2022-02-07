@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import PrimaryButton from '../common/button/PrimaryButton';
-import ModalFrame from '../common/modal/ModalFrame';
+import PrimaryButton from '@/views/components/common/button/PrimaryButton';
+import TestModal from '@/views/components/common/modal/TestModal';
 import styles from './Example.module.less';
 
 const Example = () => {
@@ -12,11 +12,7 @@ const Example = () => {
         <PrimaryButton theme="green" onClick={() => setOnModal(true)}>
           모달
         </PrimaryButton>
-        {onModal && (
-          <ModalFrame setOnModal={(bool) => setOnModal(bool)}>
-            모달테스트
-          </ModalFrame>
-        )}
+        {onModal && <TestModal setOnModal={(bool) => setOnModal(bool)} />}
         <PrimaryButton>버튼2</PrimaryButton>
       </section>
       <section className={styles.container}></section>
