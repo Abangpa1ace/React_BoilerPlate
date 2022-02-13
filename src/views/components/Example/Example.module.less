@@ -1,5 +1,7 @@
 @import '@/styles';
 
-.example { .flex; gap: 20px; .max-w(1024);  .mh-c; 
-  .container { .w(100%); .flex-center; .flex-column; gap: 10px; }
+.example { .flex; gap: 20px; .max-w(800); .min-h(calc(100vh - 120px)); .mh-c; 
+  .container { .w(100%); .min-h(100%); .flex-column; gap: 10px; .p(0,30); 
+    &:not(&:first-child) { .-l(@gray[@4]); }
+  }
 }

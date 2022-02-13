@@ -1,5 +1,10 @@
 @import '@/styles';
 
-.baseInput { .wf; .p(10,15); .-a(@gray[@4]); .br(4);
-  &:focus { .-a(@blue[@5]); }
+.baseInput { .wf;
+  :global {
+  input { .wf; .p(10,15); .-a(@gray[@4]); .br(4);
+    &:focus { .-a(@blue[@5]); }
+      &.error { .-a(@orange[@2]); }
+    }
+  }
 }

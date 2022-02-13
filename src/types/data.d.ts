@@ -1,4 +1,5 @@
-interface TestProps {
-  props1: string;
-  props2: number;
+interface ValidatorStatus {
+  valid: boolean;
+  errors?: string[];
+  error?: string;
 }
