@@ -1,8 +1,8 @@
 @import '@/styles';
 
-.primaryButton { .flex-center; .wh(100%,48); .max-w(240); .c(@c-black); .semi-bold; .br(4); .pointer; }
+.primaryButton { .flex-center; .wh(100%,48); .max-w(240); .c(@black); .semi-bold; .br(4); .pointer; }
 
-.gray { composes: primaryButton; .bgc(@gray[@3]); .c(@c-black);
+.gray { composes: primaryButton; .bgc(@gray[@3]); .c(@black);
   @{hover-press} { .bgc(@gray[@5]); }
 }
 .green { composes: primaryButton; .bgc(@green[@2]); .c(#fff);

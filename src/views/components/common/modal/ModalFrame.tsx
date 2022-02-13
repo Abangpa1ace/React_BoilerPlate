@@ -1,6 +1,6 @@
 import React from 'react';
 import ModalPortal from './ModalPortal';
-import styles from './modal.module.less';
+import css from './modal.module.less';
 
 type Props = {
   children: string;
@@ -10,8 +10,8 @@ type Props = {
 const ModalFrame: React.FC<Props> = ({ children, setOnModal }: Props) => {
   return (
     <ModalPortal>
-      <div className={styles.modalDim} onClick={() => setOnModal(false)}>
-        <div className={styles.modalBox}>
+      <div className={css.modalDim} onClick={() => setOnModal(false)}>
+        <div className={css.modalBox}>
           {children}
           <button className="close" onClick={() => setOnModal(false)}>
             X
