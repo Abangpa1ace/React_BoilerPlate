@@ -1,0 +1,16 @@
+@import '@/styles';
+
+.toast { .fix; .lt(0,0); .w(100%); .fs(14); .z(@z[@toast]); 
+  .keyframes(toast; {
+    0%, 100% { transform: translateY(-100%); }
+    10%, 90% { transform: translateY(0%); }
+  });
+  
+  .animation(toast 2s ease);
+
+  :global { 
+    div { .p(20,0); .bgc(@blue[@3]); .tc; 
+      &.error { .bgc(@orange[@2]); .c(#fff); }
+    }
+  }
+}

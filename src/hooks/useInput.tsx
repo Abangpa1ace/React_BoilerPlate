@@ -10,7 +10,6 @@ interface returnType {
   onChange: (
     e: React.ChangeEvent<HTMLInputElement> | React.FocusEvent<HTMLInputElement>
   ) => void;
-  // onFocus: (e: React.FocusEvent<HTMLInputElement>) => void;
   isValid: ValidatorStatus;
 }
 
